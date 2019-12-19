@@ -13,6 +13,7 @@
 		AFAA77E723AAF09E0034FF8D /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA77E623AAF09E0034FF8D /* Posts.swift */; };
 		AFAA77EF23ABE3F30034FF8D /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAA77EE23ABE3F30034FF8D /* SQLite.framework */; };
 		AFAA77F023ABE3F30034FF8D /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFAA77EE23ABE3F30034FF8D /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AFAA77F323ABEA740034FF8D /* SWSQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA77F223ABEA740034FF8D /* SWSQLite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +46,7 @@
 		AFAA77E423AAEDF00034FF8D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		AFAA77E623AAF09E0034FF8D /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		AFAA77EE23ABE3F30034FF8D /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/Mac/SQLite.framework; sourceTree = "<group>"; };
+		AFAA77F223ABEA740034FF8D /* SWSQLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSQLite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				AFAA77E223AAEDE80034FF8D /* DoubleGenerator.swift */,
 				AFAA77E423AAEDF00034FF8D /* Post.swift */,
 				AFAA77E623AAF09E0034FF8D /* Posts.swift */,
+				AFAA77F223ABEA740034FF8D /* SWSQLite.swift */,
 			);
 			path = SQLSpeakingObjects;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFAA77E523AAEDF00034FF8D /* Post.swift in Sources */,
+				AFAA77F323ABEA740034FF8D /* SWSQLite.swift in Sources */,
 				AFAA77DC23AAEDDC0034FF8D /* main.swift in Sources */,
 				AFAA77E323AAEDE80034FF8D /* DoubleGenerator.swift in Sources */,
 				AFAA77E723AAF09E0034FF8D /* Posts.swift in Sources */,
