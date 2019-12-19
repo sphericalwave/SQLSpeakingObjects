@@ -11,17 +11,30 @@
 		AFAA77E323AAEDE80034FF8D /* DoubleGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA77E223AAEDE80034FF8D /* DoubleGenerator.swift */; };
 		AFAA77E523AAEDF00034FF8D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA77E423AAEDF00034FF8D /* Post.swift */; };
 		AFAA77E723AAF09E0034FF8D /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA77E623AAF09E0034FF8D /* Posts.swift */; };
+		AFAA77EF23ABE3F30034FF8D /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAA77EE23ABE3F30034FF8D /* SQLite.framework */; };
+		AFAA77F023ABE3F30034FF8D /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFAA77EE23ABE3F30034FF8D /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		AFAA77D623AAEDDC0034FF8D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFAA77EC23AB01A00034FF8D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AFAA77F023ABE3F30034FF8D /* SQLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -31,6 +44,7 @@
 		AFAA77E223AAEDE80034FF8D /* DoubleGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleGenerator.swift; sourceTree = "<group>"; };
 		AFAA77E423AAEDF00034FF8D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		AFAA77E623AAF09E0034FF8D /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		AFAA77EE23ABE3F30034FF8D /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/Mac/SQLite.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFAA77EF23ABE3F30034FF8D /* SQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +64,7 @@
 			children = (
 				AFAA77DA23AAEDDC0034FF8D /* SQLSpeakingObjects */,
 				AFAA77D923AAEDDC0034FF8D /* Products */,
+				AFAA77E823AB01A00034FF8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +87,14 @@
 			path = SQLSpeakingObjects;
 			sourceTree = "<group>";
 		};
+		AFAA77E823AB01A00034FF8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFAA77EE23ABE3F30034FF8D /* SQLite.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,6 +105,7 @@
 				AFAA77D423AAEDDC0034FF8D /* Sources */,
 				AFAA77D523AAEDDC0034FF8D /* Frameworks */,
 				AFAA77D623AAEDDC0034FF8D /* CopyFiles */,
+				AFAA77EC23AB01A00034FF8D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +281,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -265,6 +294,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
