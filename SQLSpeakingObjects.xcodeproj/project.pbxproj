@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AFAA77DC23AAEDDC0034FF8D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA77DB23AAEDDC0034FF8D /* main.swift */; };
-		AFAA77E323AAEDE80034FF8D /* DoubleGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA77E223AAEDE80034FF8D /* DoubleGenerator.swift */; };
 		AFAA77E523AAEDF00034FF8D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA77E423AAEDF00034FF8D /* Post.swift */; };
 		AFAA77E723AAF09E0034FF8D /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA77E623AAF09E0034FF8D /* Posts.swift */; };
 		AFAA77EF23ABE3F30034FF8D /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAA77EE23ABE3F30034FF8D /* SQLite.framework */; };
@@ -42,7 +41,6 @@
 /* Begin PBXFileReference section */
 		AFAA77D823AAEDDC0034FF8D /* SQLSpeakingObjects */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SQLSpeakingObjects; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFAA77DB23AAEDDC0034FF8D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		AFAA77E223AAEDE80034FF8D /* DoubleGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleGenerator.swift; sourceTree = "<group>"; };
 		AFAA77E423AAEDF00034FF8D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		AFAA77E623AAF09E0034FF8D /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		AFAA77EE23ABE3F30034FF8D /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/Mac/SQLite.framework; sourceTree = "<group>"; };
@@ -82,7 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				AFAA77DB23AAEDDC0034FF8D /* main.swift */,
-				AFAA77E223AAEDE80034FF8D /* DoubleGenerator.swift */,
 				AFAA77E423AAEDF00034FF8D /* Post.swift */,
 				AFAA77E623AAF09E0034FF8D /* Posts.swift */,
 				AFAA77F223ABEA740034FF8D /* SWSQLite.swift */,
@@ -160,7 +157,6 @@
 				AFAA77E523AAEDF00034FF8D /* Post.swift in Sources */,
 				AFAA77F323ABEA740034FF8D /* SWSQLite.swift in Sources */,
 				AFAA77DC23AAEDDC0034FF8D /* main.swift in Sources */,
-				AFAA77E323AAEDE80034FF8D /* DoubleGenerator.swift in Sources */,
 				AFAA77E723AAF09E0034FF8D /* Posts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
