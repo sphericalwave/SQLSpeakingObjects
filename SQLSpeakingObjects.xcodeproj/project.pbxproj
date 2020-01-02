@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF64C81E23ABF547001210FB /* PostsDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64C81D23ABF547001210FB /* PostsDB.swift */; };
+		AF9B8F1F23BE6221001DB2DB /* SQLiteDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B8F1E23BE6221001DB2DB /* SQLiteDatabase.swift */; };
 		AFAA77DC23AAEDDC0034FF8D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA77DB23AAEDDC0034FF8D /* main.swift */; };
 		AFAA77E523AAEDF00034FF8D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA77E423AAEDF00034FF8D /* Post.swift */; };
 		AFAA77E723AAF09E0034FF8D /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA77E623AAF09E0034FF8D /* Posts.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AF64C81D23ABF547001210FB /* PostsDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDB.swift; sourceTree = "<group>"; };
+		AF9B8F1E23BE6221001DB2DB /* SQLiteDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDatabase.swift; sourceTree = "<group>"; };
 		AFAA77D823AAEDDC0034FF8D /* SQLSpeakingObjects */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SQLSpeakingObjects; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFAA77DB23AAEDDC0034FF8D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		AFAA77E423AAEDF00034FF8D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -80,9 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				AFAA77DB23AAEDDC0034FF8D /* main.swift */,
+				AF64C81D23ABF547001210FB /* PostsDB.swift */,
 				AFAA77E423AAEDF00034FF8D /* Post.swift */,
 				AFAA77E623AAF09E0034FF8D /* Posts.swift */,
 				AFAA77F223ABEA740034FF8D /* SWSQLite.swift */,
+				AF9B8F1E23BE6221001DB2DB /* SQLiteDatabase.swift */,
 			);
 			path = SQLSpeakingObjects;
 			sourceTree = "<group>";
@@ -156,7 +162,9 @@
 			files = (
 				AFAA77E523AAEDF00034FF8D /* Post.swift in Sources */,
 				AFAA77F323ABEA740034FF8D /* SWSQLite.swift in Sources */,
+				AF9B8F1F23BE6221001DB2DB /* SQLiteDatabase.swift in Sources */,
 				AFAA77DC23AAEDDC0034FF8D /* main.swift in Sources */,
+				AF64C81E23ABF547001210FB /* PostsDB.swift in Sources */,
 				AFAA77E723AAF09E0034FF8D /* Posts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

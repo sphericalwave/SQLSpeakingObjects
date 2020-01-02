@@ -6,17 +6,16 @@
 //  Copyright © 2019 SphericalWaveSoftware. All rights reserved.
 //
 
-//import Foundation
-//import SQLite
-//
-//class Database
-//{
-//    
-//    init() {
-//        do {
-//            let db = try Connection("db.sqlite")
-//            
-//        }
-//        catch { fatalError() }
-//    }
-//}
+//TODO: Generalize DB for Postgres
+import Foundation
+
+class SQLiteDatabase
+{
+    func post() -> Post {
+        return Post(id: 12, date: Date(), title: "Testing 123")
+    }
+    
+    func add(post: Post) {
+        print("How do i do that?")
+    }
+}

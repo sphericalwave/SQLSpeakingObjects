@@ -10,9 +10,14 @@ import Foundation
 
 struct Post
 {
-    let name: String
+    let id: Int64
+    let date: Date
+    let title: String
     
-    init(name: String) {
-        self.name = name
+    //TODO: id is assigned by the database
+    init(id: Int64, date: Date, title: String) {
+        self.id = id
+        self.date = date
+        self.title = title
     }
 }

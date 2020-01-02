@@ -7,35 +7,60 @@
 //
 
 import Foundation
+import SQLite
 
 struct Posts: Sequence, IteratorProtocol {
     
-    let sqlLiteDB: SQLiteDatabase
+    let postsDB: PostsDB
+    var index = 0
+    //let postsTable: Table
     
-    init(database: SQLiteDatabase) {
-        self.sqlLiteDB = database
+    init(postsDB: PostsDB) {
+        self.postsDB = postsDB
     }
 
     mutating func next() -> Post? {
         //select id from post
         //construct post here
-        return sqlLiteDB.post() //temporary
+        //reference to table?
+        //let table = postsDB.postsTable
+        //let id = Expression<Int64>("id")
+        //let thing = try db.prepare("SELECT id, someDate, someString, someInt FROM myTable")
+        //let user = postsTable.select(id)
+        //return postsDB.post() //temporary
+        let post = postsDB.posts[index] //this will crash if we overrun the array
+        return nil
     }
     
     func add(post: Post) {
-        sqlLiteDB.add(post: post)
+        postsDB.add(post: post) 
     }
 }
 
-//TODO: Generalize DB for Postgres
+//Sequence Stuff
 
-class SQLiteDatabase
-{
-    func post() -> Post {
-        return Post(name: "Test Database reponse")
-    }
-    
-    func add(post: Post) {
-        print("How do i do that?")
-    }
-}
+//let db = SQLiteDatabase()
+//let posts = Posts(database: db)
+//
+//var i = 0
+//for post in posts {
+//    i += 1
+//    print("Post.name = \(post.name)")
+//    if i == 3 { break }
+//}
+//
+//let newPost = Post(name: "Awesome Dood")
+//posts.add(post: newPost)
+//
+//i = 0
+//for post in posts {
+//    i += 1
+//    print("Post.name = \(post.name)")
+//    if i == 4 { break }
+//}
+//
+////Read Post
+//
+////Update Post
+//
+////Delete
